@@ -33,9 +33,9 @@ def delete_tables():
     conn = connection(url)
     curr = conn.cursor()
 
-    users = """DROP TABLE IF EXISTS users CASCADE"""
-    sales = """DROP TABLE IF EXISTS sales CASCADE"""
-    products = """DROP TABLE IF EXISTS products CASCADE"""
+    db1 = """DROP TABLE IF EXISTS users CASCADE"""
+    db2 = """DROP TABLE IF EXISTS sales CASCADE"""
+    db3 = """DROP TABLE IF EXISTS products CASCADE"""
 
     # Add all tables to the queries list
     queries = [users, products,sales]
